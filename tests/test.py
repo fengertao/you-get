@@ -60,6 +60,8 @@ class YouGetTests(unittest.TestCase):
 
     def test_twitter(self):
         twitter.download('https://twitter.com/elonmusk/status/1530516552084234244', info_only=True)
+        twitter.download('https://twitter.com/remonwangxt/status/1516146503038951431', info_only=True)
+
 
 
 if __name__ == '__main__':
