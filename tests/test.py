@@ -12,7 +12,8 @@ from you_get.extractors import (
     soundcloud,
     tiktok,
     twitter,
-    miaopai
+    miaopai,
+    cntv
 )
 
 
@@ -65,6 +66,9 @@ class YouGetTests(unittest.TestCase):
 
     def test_weibo(self):
         miaopai.download('https://video.weibo.com/show?fid=1034:4825403706245135', info_only=True)
+
+    def test_cntv(self):
+        cntv.download('https://tv.cctv.com/2024/02/06/VIDE3JBSQ5KZI6xZmmary1Q0240206.shtml', info_only=False)
 
 if __name__ == '__main__':
     unittest.main()
